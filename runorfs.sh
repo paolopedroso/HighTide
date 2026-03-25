@@ -14,8 +14,8 @@ cd OpenROAD-flow-scripts
 docker run --rm -it \
   -u $(id -u ${USER}):$(id -g ${USER}) \
   -v $(pwd)/flow:/OpenROAD-flow-scripts/flow \
-  -v $(pwd)/..:/OpenROAD-flow-scripts/UCSC_ML_suite \
-  -w /OpenROAD-flow-scripts/UCSC_ML_suite \
+  -v $(pwd)/..:/OpenROAD-flow-scripts/HighTide \
+  -w /OpenROAD-flow-scripts/HighTide \
   -e DISPLAY=${DISPLAY} \
   -v /tmp/.X11-unix:/tmp/.X11-unix \
   -v ${HOME}/.Xauthority:/.Xauthority \
